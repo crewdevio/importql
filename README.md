@@ -9,7 +9,7 @@ easy way to import and parse graphql files in [deno](https://deno.land/)
 install using [Trex](https://deno.land/x/trex) package manager
 
 ```sh
-$ Trex install --map importql
+$ trex install --map importql
 ```
 
 or use url
