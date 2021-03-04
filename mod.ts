@@ -1,5 +1,5 @@
-import gql from "https://cdn.pika.dev/graphql-tag@^2.10.1";
-import { red } from "https://deno.land/std/fmt/colors.ts";
+import { join } from "./imports/path.ts";
+import { gql } from "./imports/gql.ts";
 
 const { readFileSync } = Deno;
 /**
@@ -14,13 +14,13 @@ export function importQL(path: string): object {
 
   try {
     const decoder = new TextDecoder("utf-8");
-    const file = readFileSync(path);
+    const file = readFileSync(join(Deno.cwd(), path));
     // @ts-ignore
     return gql`
       ${decoder.decode(file)}
     `;
   } catch (error) {
-    console.error(new Error(`file [${red(path)}] not found`));
+    console.error(new Error(`error parsing file [${path}]`));
     return {};
   }
 }

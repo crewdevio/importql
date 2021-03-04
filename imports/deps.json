@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "gql": {
+      "url": "https://cdn.skypack.dev/graphql-tag@2.10.1",
+      "hash": "c7a4e598d237cd8cc2c5d1eb7eb4df67eb0a5e86c34fabf61b9b45e33df3e726"
+    },
+    "path": {
+      "url": "https://deno.land/std/path/mod.ts",
+      "hash": "7785d20e2d17f5b217f1f5120bc47adcde3854060e7be740bb8bd539c083020f"
+    }
+  }
+}
